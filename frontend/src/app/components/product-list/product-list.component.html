@@ -1,0 +1,19 @@
+<table class="table">
+  <thead>
+    <tr>
+    
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+    <tbody>
+      <tr *ngFor="let tempProduct of products">
+        <td>{{ tempProduct.name }}</td>
+        <td>{{ tempProduct.unitPrice + 0.01 | currency : "CHF "}}</td>
+        <td>{{ tempProduct.unitsInStock }}</td>
+      </tr>
+    </tbody>
+  </thead>
+</table>
+
